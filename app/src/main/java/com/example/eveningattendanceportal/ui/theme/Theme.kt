@@ -4,15 +4,16 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
 private val LightColors = lightColorScheme(
-    primary = android.graphics.Color.parseColor("#6200EE"),
-    secondary = android.graphics.Color.parseColor("#03DAC5")
+    primary = Color(0xFF6200EE),
+    secondary = Color(0xFF03DAC5)
 )
 
 private val DarkColors = darkColorScheme(
-    primary = android.graphics.Color.parseColor("#BB86FC"),
-    secondary = android.graphics.Color.parseColor("#03DAC5")
+    primary = Color(0xFFBB86FC),
+    secondary = Color(0xFF03DAC5)
 )
 
 @Composable
@@ -20,8 +21,7 @@ fun EveningAttendancePortalTheme(
     darkTheme: Boolean = false,
     content: @Composable () -> Unit
 ) {
-    val colors =
-        if (darkTheme) DarkColors else LightColors
+    val colors = if (darkTheme) DarkColors else LightColors
 
     MaterialTheme(
         colorScheme = colors,

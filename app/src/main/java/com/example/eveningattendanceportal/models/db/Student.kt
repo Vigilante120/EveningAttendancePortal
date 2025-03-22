@@ -1,4 +1,4 @@
-package com.example.eveningattendanceportal
+package com.example.eveningattendanceportal.models.db
 
 data class Student(
     val rollNumber: String,

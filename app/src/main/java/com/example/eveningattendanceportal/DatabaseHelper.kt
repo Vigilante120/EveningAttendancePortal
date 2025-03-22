@@ -1,8 +1,7 @@
 import android.content.ContentValues
 import android.content.Context
-import android.database.Cursor
-import com.example.eveningattendanceportal.Student
-import com.example.eveningattendanceportal.Teacher
+import com.example.eveningattendanceportal.models.db.Student
+import com.example.eveningattendanceportal.models.db.Teacher
 import com.example.eveningattendanceportal.Attendance
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
